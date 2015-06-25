@@ -1,0 +1,62 @@
+.product{
+    .title>a{color: #424242;}
+    .rule{width: 100%;margin-top: 8em;}
+    
+    section{
+        &>img{width: 100%;}
+        
+        .product_content{
+            margin-top: 2em;margin-bottom: 2em;
+            .make-row();
+            .sidebar{
+                .make-sm-column(2);
+                a{color: #ff5f2b;}
+                p{font-family: @secondary; span{color: #bcbcbc;}i{color: #ff5f2b;}}
+                .love{font-size: 3em;}
+            }
+            .main{
+                .make-sm-column(10);
+                h1{font-family: @primary;margin-top: 0;}
+                h5{font-family: @primary; font-weight: bold; color: #424242;margin-top: 1.5em; margin-bottom: .3em;}
+                p{color: #424242;font-family: @secondary;}
+                img{margin-top: 2em;width: 100%;}
+                ul{
+                    font-family: @secondary;
+                    list-style: square;padding-left: 15px;
+                    li{margin-top: 10px;}
+                }
+            }
+        }
+        
+        .related{
+            .make-row();
+            margin-bottom: 4em;
+            font-family: @secondary;
+            .left,.right{.make-sm-column(6);}
+            
+            .left{
+                .box{.make-sm-column(4);color:#424242;text-align: left;padding: 0;}
+            }
+            .right{
+                text-align: right;
+                p{margin: 0;}
+                a{color: #ff5f2b;}
+                .contact{
+                    text-align: right;
+                    margin-top: 1em;
+                    .enquiry{
+                        margin-right: 5px;
+                        width: 20%;color:#ff5f2b; background-color: #fff; border: 1px solid #ff5f2b;
+                    }
+                    .mail{width: 20%;color:#fff; background-color: #ff5f2b;border: 1px solid #ff5f2b;}
+                }
+                .social{
+                    margin-top: 1.5em;
+                    a{color: #bcbcbc;.make-sm-column(1);}
+                    a:first-child{.make-sm-column-offset(9);}
+                }
+            }
+        }
+    }
+    
+}

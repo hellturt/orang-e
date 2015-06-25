@@ -1,0 +1,66 @@
+.contact{
+    .title>a{color: #424242;}
+    .rule{width: 100%;margin-top: 8em;}
+    
+    section{
+        img{width: 100%;}
+        
+        .contact_content{
+            margin-top: 2em;margin-bottom: 2em;
+            .make-row();
+            .sidebar{
+                .make-sm-column(3);
+                p{color: #424242;font-family: @secondary;margin-bottom: 0;margin-top: 1em;}
+                span{color: #ff5f2b;}
+                h5{font-family: @primary; color: #ff5f2b;margin-bottom: .5em;}
+                ul{
+                    list-style: none;padding: 0;
+                    li{margin-bottom: .5em;}
+                    a{color: #424242;font-family: @secondary;}
+                    
+                }
+                a{.make-sm-column(2);margin-top: 1em;color:#000; }
+            }
+            
+
+            .main{
+                .make-sm-column(9);
+                span{color:#ff5f2b;}
+                hr{border-color: #c3c3c3;}
+                &>hr{margin: 5px 0 0 0;}
+                p{color: #424242;font-family: @secondary;margin-bottom: 0;margin-top: 0;}
+                h1{font-family: @primary;margin-top: 0;}
+                h5{font-family: @primary; color: #ff5f2b;margin-top: 2em; margin-bottom: .5em;}
+                ul{
+                    list-style: none;padding: 0;
+                    li{margin-bottom: 0;}
+                    a{color: #424242;font-family: @secondary;}
+                    
+                }
+                
+                form{
+                    margin-top: 2em;margin-bottom: 6em;
+                    hr{margin: 0;}
+                    .form-group{
+                        margin-top: 2em;
+                        input{height: 50px;}
+                        textarea,input{
+                            border: none;border-radius: 0; padding: 0;
+                            font-family: @primary;font-size: 1.3em; font-weight: bold;
+                            .box-shadow(inset 0 1px 1px rgba(0,0,0,0));
+                            border-bottom: 1px solid #c3c3c3;
+                        }
+                    }
+                    button{
+                        .pull-right();
+                        width: 40%;border-radius: 0;
+                        color: #fff; background-color: #ff5f2b;
+                        border-bottom: 2px solid #bf4821;
+                        font-family: @primary;
+                    }
+                }
+            }
+        }
+    
+    }
+}
